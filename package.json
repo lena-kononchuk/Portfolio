@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "homepage": "https://github.com/HakunaMatata91.github.io/Portfolio",
   "type": "module",
   "scripts": {
     "dev": "gulp",
@@ -13,7 +14,6 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/HakunaMatata91.github.io/Portfolio",
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "del": "^7.0.0",

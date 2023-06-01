@@ -1,10 +1,11 @@
 @import "fonts";
 body {
-   font-family: CormorantUpright;
-   font-weight: 600;
-   div {
-      background: no-repeat url("../img/feedback-bg.jpg");
-      width: 800px;
-      height: 680px;
-   }
+   padding: 0;
+   margin: 0;
+   color: #666;
+   background: #fafafa;
+   font-family: Arial, Helvetica, sans-serif;
+
+   line-height: 1.4;
+   background-color: royalblue;
 }

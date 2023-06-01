@@ -1,12 +1,14 @@
-import webp from 'gulp-webp';
-import imagemin from 'gulp-imagemin';
+import webp from "gulp-webp";
+import imagemin from "gulp-imagemin";
+
 export const img = () => {
    return app.gulp.src(app.path.src.img)
       .pipe(app.plugins.plumber(
          app.plugins.notify.onError({
-            title: "IMG",
+            title: "IMAGES",
             message: "Error: <%= error.message %>"
-         })))
+         }))
+      )
       .pipe(app.plugins.newer(app.path.build.img))
       .pipe(
          app.plugins.if(

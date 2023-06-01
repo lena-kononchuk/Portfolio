@@ -24,7 +24,7 @@ import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { img } from "./gulp/tasks/img.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
-import { svgSprive } from "./gulp/tasks/svgSprive.js";
+import { svgSpriteTask } from "./gulp/tasks/svg-sprite.js";
 import { zip } from "./gulp/tasks/zip.js";
 import ghPages from "gulp-gh-pages";
 // import { ftp } from "./gulp/tasks/ftp.js";
@@ -42,7 +42,7 @@ function watcher() {
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 // Основные задачи
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, img));
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, img, svgSpriteTask));
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
@@ -53,7 +53,7 @@ const deployZIP = gulp.series(reset, mainTasks, zip);
 // const deployFTP = gulp.series(reset, mainTasks, ftp);
 
 // Экспорт сценариев
-export { svgSprive }
+export { svgSpriteTask }
 export { dev }
 export { build }
 export { deployZIP }
