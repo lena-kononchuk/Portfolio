@@ -1,11 +1,13 @@
 @import "fonts";
-body {
-   padding: 0;
-   margin: 0;
-   color: #666;
-   background: #fafafa;
-   font-family: Arial, Helvetica, sans-serif;
+@import "./base/_common";
+@import "./base/_normalize";
+@import "./base/reset";
+@import "./base/_vars";
 
-   line-height: 1.4;
-   background-color: royalblue;
-}
+@import "./components/button";
+@import "./components/container";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/projects";
