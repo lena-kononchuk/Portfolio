@@ -8,7 +8,7 @@
    <title>Portfolio</title>
 </head>
 
-<body>
+<body id="content">
    <header>
    <div class="container">
       <div class="header-body">
@@ -19,7 +19,7 @@
             <ul class="menu-nav">
                <li class="menu-nav__items"><a class="menu-nav__link" href="">Projects</a> </li>
                <li class="menu-nav__items"><a class="menu-nav__link" href="">Technologies</a> </li>
-               <li class="menu-nav__items"><a class="menu-nav__link" href="">Projects</a> </li>
+               <li class="menu-nav__items"><a class="menu-nav__link" href="">About me</a> </li>
             </ul>
          </div>
          <div class="header-body__social-media">
@@ -32,8 +32,11 @@
       <section class="hero-page">
          <div class="container">
             <div class="hero-page__body">
-               <h1 class="hero-page-title">Hello, I'm Lena,</h1>
+               <div class="hero-page__title-typing">
+                  <h1 class="hero-page__title" id="typing-text"></h1>
+               </div>
                <div class="hero-page__subtitle">Trainee Front-end/HTML coder</div>
+
                <div class="hero-page__subtext">
                   I seek an opportunity to grow professionally as a programmer. I am persistent and hardworking, focused
                   on results. I
@@ -43,11 +46,17 @@
                   commercial experience.
                </div>
                <div class="hero-page__button">
-                  <button class="button">Download CV</button>
+                  <button class="button" id="download-button">Download CV</button>
+                  <a href="./img/hakunamatata91_github.pdf" download>Скачати резюме</a>
+               </div>
+               <div class="hero-page__circle">
+                  <div class="circle circle-grow"></div>
+                  <div class="circle circle-shrink"></div>
                </div>
                <div class="hero-page__avatar">
-                  <img src="img/ll.jpg" alt="avatar" width="300" height="300">
+                  <img src="img/avatar.png" alt="avatar" width="207" height="207">
                </div>
+
             </div>
          </div>
       </section>
@@ -180,6 +189,14 @@
    </div>
 </footer>
    <script src="js/app.min.js"></script>
+   <!-- <script type="module">
+      import { generatePDF } from './js/app.js';
+
+      document.getElementById('download-button').addEventListener('click', function () {
+         generatePDF();
+      });
+      
+   </script> -->
 </body>
 
 </html>
