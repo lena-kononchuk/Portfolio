@@ -336,6 +336,52 @@ ul {
   color: #ffffff;
 }
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  border-radius: 15px;
+  border: 1px solid #945dd6;
+  padding: 20px;
+}
+
+.card__title {
+  padding-top: 25px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card__subtitle {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #929eb0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.card__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card__button-button {
+  padding: 15px 25px;
+}
+
 header {
   height: 87px;
   padding-top: 40px;
@@ -727,60 +773,6 @@ header {
   margin-bottom: 16px;
 }
 
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 100%;
-  border-radius: 15px;
-  border: 1px solid #945dd6;
-  padding: 20px;
-}
-
-.card__images {
-  min-width: 240px;
-  min-height: 138px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.card__title {
-  padding-top: 25px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.card__subtitle {
-  margin-bottom: 25px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #929eb0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.card__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 5px;
-     -moz-column-gap: 5px;
-          column-gap: 5px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.card__button-button {
-  padding: 15px 25px;
-}
-
 @media screen and (min-width: 320px) {
   .container {
     width: 280px;
@@ -796,6 +788,19 @@ header {
 @media screen and (min-width: 640px) {
   .container {
     width: 600px;
+  }
+
+  .card {
+    width: 243px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+
+  .card__button {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
   }
 
   header {
@@ -860,19 +865,6 @@ header {
        -moz-column-gap: 30px;
             column-gap: 30px;
   }
-
-  .card {
-    width: 243px;
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
-  }
-
-  .card__button {
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -900,6 +892,10 @@ header {
     line-height: 48px;
   }
 
+  .card {
+    width: 256px;
+  }
+
   .hero-page__subtext {
     max-width: 600px;
   }
@@ -916,10 +912,6 @@ header {
   .hero-page .circle-shrink {
     right: 30px;
     top: -103px;
-  }
-
-  .card {
-    width: 256px;
   }
 }
 
@@ -949,6 +941,14 @@ header {
     line-height: 69px;
   }
 
+  .card {
+    width: 522px;
+  }
+
+  .card__button-button {
+    padding: 25px 50px;
+  }
+
   .menu-nav {
     -webkit-column-gap: 80px;
        -moz-column-gap: 80px;
@@ -957,19 +957,6 @@ header {
 
   .hero-page .circle-grow {
     left: 649px;
-  }
-
-  .card {
-    width: 522px;
-  }
-
-  .card__images {
-    min-width: 480px;
-    min-height: 255px;
-  }
-
-  .card__button-button {
-    padding: 25px 50px;
   }
 }
 
