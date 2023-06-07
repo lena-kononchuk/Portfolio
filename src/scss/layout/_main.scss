@@ -15,6 +15,7 @@
       display: inline;
    }
    &__title-typing {
+      color: #ffff;
       max-width: 173px;
       background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 90%);
       -webkit-background-clip: text;
@@ -53,11 +54,13 @@
       font-size: 20px;
       line-height: 26px;
       padding-top: 10px;
+      color: #ffff;
    }
 
    // .hero-page__subtext
 
    &__subtext {
+      color: #ffff;
       padding: 16px 0 30px 0;
       font-weight: 500;
       font-size: 14px;

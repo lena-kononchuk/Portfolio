@@ -605,6 +605,7 @@ header {
   display: inline;
 }
 .hero-page__title-typing {
+  color: white;
   max-width: 173px;
   background: -webkit-gradient(linear, right top, left top, from(#13adc7), color-stop(66.67%, #6978d1), color-stop(90%, #945dd6));
   background: -o-linear-gradient(right, #13adc7 0%, #6978d1 66.67%, #945dd6 90%);
@@ -661,8 +662,10 @@ header {
   font-size: 20px;
   line-height: 26px;
   padding-top: 10px;
+  color: white;
 }
 .hero-page__subtext {
+  color: white;
   padding: 16px 0 30px 0;
   font-weight: 500;
   font-size: 14px;
