@@ -4,7 +4,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="css/style.min.css?_v=20230607172142">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_v=20230607172142" />
    <title>Portfolio</title>
 </head>
 
@@ -35,9 +36,12 @@
                <div class="hero-page__title-typing">
                   <h1 class="hero-page__title" id="typing-text"></h1>
                </div>
-               <div class="hero-page__subtitle">Trainee Front-end/HTML coder</div>
 
-               <div class="hero-page__subtext">
+               <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" class="hero-page__subtitle">Trainee
+                  Front-end/HTML coder
+               </div>
+
+               <div class="hero-page__subtext" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="550">
                   I seek an opportunity to grow professionally as a programmer. I am persistent and hardworking, focused
                   on results. I
                   really like to see the result of my work and I want to get into a team of like-minded people, create
@@ -46,15 +50,15 @@
                   commercial experience.
                </div>
                <div class="hero-page__button">
-                  <button class="button" id="download-button">Download CV</button>
-                  <a href="./img/hakunamatata91_github.pdf" download>Скачати резюме</a>
+                  <!-- <button class="button" id="download-button">Download CV</button> -->
+                  <a class="button" href="./img/resume.pdf" download>Download CV</a>
                </div>
                <div class="hero-page__circle">
                   <div class="circle circle-grow"></div>
                   <div class="circle circle-shrink"></div>
                </div>
                <div class="hero-page__avatar">
-                  <img src="img/avatar.png" alt="avatar" width="207" height="207">
+                  <picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt="avatar" width="207" height="207"></picture>
                </div>
 
             </div>
@@ -62,55 +66,71 @@
       </section>
       <section class="projects-page">
    <div class="container">
-      <div class="projects-page__title">Projects</div>
+      <div class="projects-page__title title">Projects</div>
       <div class="projects-page__body">
          <article class="projects-page__card card">
-            <img class="card__images" src="@img" alt="">
-            <h3 class="card__title"></h3>
-            <div class="card__subtitle"></div>
+            <picture><source srcset="img/ringo.webp" type="image/webp"><img class="card__images" src="img/ringo.png" alt="Furniture Websites"></picture>
+            <h3 class="card__title">Furniture Websites</h3>
+            <div class="card__subtitle">Responsive Furniture Website landing page Using HTML, CSS(SCSS), JS</div>
             <div class="card__button">
-               <a href="">Live preview</a>
-               <a href="">Check on GitHub</a>
+               <a class="card__button-button button" href="https://hakunamatata91.github.io/Ringo/Index.html">Live
+                  preview</a>
+               <a class="card__button-button button"" href=" https://github.com/HakunaMatata91/Ringo">
+                  GitHub</a>
             </div>
          </article>
-
          <article class="projects-page__card card">
-            <img class="card__images" src="@img" alt="">
-            <h3 class="card__title"></h3>
-            <div class="card__subtitle"></div>
+            <img class="card__images" src="" alt="">
+            <h3 class="card__title">Portfolio</h3>
+            <div class="card__subtitle">Responsive layout for landing page for front-end developer. HTML5, CSS3
+               (SCSS),Gulp</div>
             <div class="card__button">
-               <a href="">Live preview</a>
-               <a href="">Check on GitHub</a>
+               <a class="card__button-button button" href="">Live preview</a>
+               <a class="card__button-button button" href="https://github.com/HakunaMatata91/Portfolio">
+                  GitHub</a>
             </div>
          </article>
-
          <article class="projects-page__card card">
-            <img class="card__images" src="@img" alt="">
-            <h3 class="card__title"></h3>
-            <div class="card__subtitle"></div>
+            <picture><source srcset="img/coffe.webp" type="image/webp"><img class="card__images" src="img/coffe.png" alt="Coffe landing page"></picture>
+            <h3 class="card__title">Coffe store</h3>
+            <div class="card__subtitle">Responsive Coffee Shop Website landing page Using HTML5/SCSS/JavaScript</div>
             <div class="card__button">
-               <a href="">Live preview</a>
-               <a href="">Check on GitHub</a>
+               <a class="card__button-button button" href="https://hakunamatata91.github.io/CoffeStyle/index.html">Live
+                  preview</a>
+               <a class="card__button-button button" href="https://github.com/HakunaMatata91/CoffeStyle">
+                  GitHub</a>
             </div>
          </article>
-
          <article class="projects-page__card card">
-            <img class="card__images" src="@img" alt="">
-            <h3 class="card__title"></h3>
-            <div class="card__subtitle"></div>
+            <picture><source srcset="img/spk.webp" type="image/webp"><img class="card__images" src="img/spk.png" alt=""></picture>
+            <h3 class="card__title">IT-SPK landing page </h3>
+            <div class="card__subtitle">Responsive landing page HTML5/SCSS/JavaScript,Gulp</div>
             <div class="card__button">
-               <a href="">Live preview</a>
-               <a href="">Check on GitHub</a>
+               <a class="card__button-button button" href="https://hakunamatata91.github.io/IT-SPK/">Live preview</a>
+               <a class="card__button-button button" href="https://github.com/HakunaMatata91/IT-SPK">GitHub</a>
             </div>
          </article>
-
          <article class="projects-page__card card">
-            <img class="card__images" src="@img" alt="">
-            <h3 class="card__title"></h3>
-            <div class="card__subtitle"></div>
+            <picture><source srcset="img/zlatmax.webp" type="image/webp"><img class="card__images" src="img/zlatmax.png" alt=""></picture>
+            <h3 class="card__title">Online Shop Zlatmax</h3>
+            <div class="card__subtitle">Online Shop “Zlatmax” - HTML (HTML5), CSS (CSS3), JavaScript, SCSS/Sass, GULP,
+               Webpack, Flexbox</div>
             <div class="card__button">
-               <a href="">Live preview</a>
-               <a href="">Check on GitHub</a>
+               <a class="card__button-button button" href="https://hakunamatata91.github.io/Zlatmax/">Live preview</a>
+               <a class="card__button-button button" href="https://github.com/HakunaMatata91/Zlatmax">
+                  GitHub</a>
+            </div>
+         </article>
+         <article class="projects-page__card card">
+            <picture><source srcset="img/forecast.webp" type="image/webp"><img class="card__images" src="img/forecast.png" alt=""></picture>
+            <h3 class="card__title">React JS Weather App</h3>
+            <div class="card__subtitle">This web app on React displays the live weather data of any place in the world.
+            </div>
+            <div class="card__button">
+               <a class="card__button-button button" href="https://hakunamatata91.github.io/forecast/#/">Live
+                  preview</a>
+               <a class="card__button-button button" href="https://github.com/HakunaMatata91/forecast">
+                  GitHub</a>
             </div>
          </article>
       </div>
@@ -118,6 +138,7 @@
 </section>
       <section class="technologies-page">
          <div class="container">
+            <div class="projects-page__title title">Technologies</div>
             <ul class="technologies-menu">
                <li class="technologies-menu__list">Frontend: HTML5/CSS3(SASS(SCSS)), JavaScript (basic).</li>
                <li class="technologies-menu__list">Graphic Tools: Figma, Photoshop.</li>
@@ -129,7 +150,7 @@
       </section>
       <section class="summary-page">
          <div class="container">
-            <div class="summary-page__title">About Me</div>
+            <div class="summary-page__title title">About Me</div>
             <div class="summary-page__subtitle">
                I have no commercial experience as a Front-End developer, but I believe that with determination and hard
                work, anything
@@ -165,7 +186,7 @@
       <section class="education-page">
          <div class="container">
             <div class="education-page__body">
-               <h2 class="education-page__title">EDUCATION and CERTIFICATES</h2>
+               <h2 class="education-page__title title">EDUCATION and CERTIFICATES</h2>
                <ul class="education-page__menu">
                   <li class="education-page__list">Kherson State Agricultural University (Management) 2010-2014</li>
                   <li class="education-page__list">Main Academy (Junior Front-end Developer) 2021-2021</li>
@@ -188,7 +209,7 @@
       </div>
    </div>
 </footer>
-   <script src="js/app.min.js"></script>
+   <script src="js/app.min.js?_v=20230607172142"></script>
    <!-- <script type="module">
       import { generatePDF } from './js/app.js';
 
