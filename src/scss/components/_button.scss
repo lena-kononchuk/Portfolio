@@ -1,0 +1,19 @@
+.button {
+   padding: 17px 30px;
+   background: linear-gradient(270deg, #008fa9 0%, #4b5ab3 66.67%, #6c35ae 100%);
+   box-shadow: 0px 10px 30px rgba(147, 94, 214, 0.35);
+   border-radius: 43.5977px;
+   border: none;
+   text-decoration: none;
+   color: #ffff;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 21px;
+   cursor: pointer;
+   transition: all 500ms ease-in;
+}
+.button:hover {
+   background: linear-gradient(270deg, #31cbe5 0%, #8796ef 66.67%, #b27bf4 100%);
+   box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.5);
+   border-radius: 60px;
+}

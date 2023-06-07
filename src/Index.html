@@ -4,15 +4,22 @@
 "title":"Portfolio"
 })
 
-<body>
+<body id="content">
    @@include('html/header.html', {})
    <main class="main">
       <section class="hero-page">
          <div class="container">
             <div class="hero-page__body">
-               <h1 class="hero-page-title">Hello, I'm Lena,</h1>
-               <div class="hero-page__subtitle">Trainee Front-end/HTML coder</div>
-               <div class="hero-page__subtext">
+               <div class="hero-page__title-typing">
+                  <h1 class="hero-page__title" id="typing-text"></h1>
+               </div>
+
+               <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="hero-page__subtitle">
+                  Trainee
+                  Front-end/HTML coder
+               </div>
+
+               <div class="hero-page__subtext" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="2000">
                   I seek an opportunity to grow professionally as a programmer. I am persistent and hardworking, focused
                   on results. I
                   really like to see the result of my work and I want to get into a team of like-minded people, create
@@ -21,17 +28,24 @@
                   commercial experience.
                </div>
                <div class="hero-page__button">
-                  <button class="button">Download CV</button>
+                  <!-- <button class="button" id="download-button">Download CV</button> -->
+                  <a class="button" href="./img/resume.pdf" download>Download CV</a>
+               </div>
+               <div class="hero-page__circle">
+                  <div class="circle circle-grow"></div>
+                  <div class="circle circle-shrink"></div>
                </div>
                <div class="hero-page__avatar">
-                  <img src="@img/ll.jpg" alt="avatar" width="300" height="300">
+                  <img src="@img/avatar.jpg" alt="avatar" width="207" height="207">
                </div>
+
             </div>
          </div>
       </section>
       @@include('html/projects.html', {})
       <section class="technologies-page">
          <div class="container">
+            <div class="projects-page__title title">Technologies</div>
             <ul class="technologies-menu">
                <li class="technologies-menu__list">Frontend: HTML5/CSS3(SASS(SCSS)), JavaScript (basic).</li>
                <li class="technologies-menu__list">Graphic Tools: Figma, Photoshop.</li>
@@ -43,7 +57,7 @@
       </section>
       <section class="summary-page">
          <div class="container">
-            <div class="summary-page__title">About Me</div>
+            <div class="summary-page__title title">About Me</div>
             <div class="summary-page__subtitle">
                I have no commercial experience as a Front-End developer, but I believe that with determination and hard
                work, anything
@@ -79,7 +93,7 @@
       <section class="education-page">
          <div class="container">
             <div class="education-page__body">
-               <h2 class="education-page__title">EDUCATION and CERTIFICATES</h2>
+               <h2 class="education-page__title title">EDUCATION and CERTIFICATES</h2>
                <ul class="education-page__menu">
                   <li class="education-page__list">Kherson State Agricultural University (Management) 2010-2014</li>
                   <li class="education-page__list">Main Academy (Junior Front-end Developer) 2021-2021</li>

@@ -1,3 +1,4 @@
+import AOS from 'aos';
 export function isWebp() {
    function testWebp(callback) {
       let webP = new Image();
@@ -11,3 +12,38 @@ export function isWebp() {
       document.documentElement.classList.add(className)
    });
 }
+// This is the funtion you need to copy
+const text = `Hello, I'm Lena`;
+let index = 0;
+const speed = 100; // Скорость печати (задержка между символами)
+
+export function typeText() {
+   if (index < text.length) {
+      document.getElementById('typing-text').textContent += text.charAt(index);
+
+      index++;
+      setTimeout(typeText, speed);
+   }
+}
+
+typeText();
+AOS.init();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+//header style
+header {
+   height: 87px;
+   padding-top: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   @media screen and (min-width: 640px) {
+      padding-top: 0px;
+   }
+}
+.header-body {
+   display: flex;
+   color: #ffffff;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+
+   // .header-body__portfolio-info
+   &__portfolio-info {
+      order: 1;
+      @media screen and (min-width: 640px) {
+         order: 1;
+      }
+   }
+   &__portfolio-info a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 24px;
+   }
+   // .header-body__navigation
+   &__navigation {
+      order: 3;
+      @media screen and (min-width: 640px) {
+         order: 2;
+         align-self: center;
+      }
+   }
+
+   // .header-body__social-media
+   &__social-media {
+      order: 2;
+      @media screen and (min-width: 640px) {
+         order: 3;
+      }
+   }
+}
+.menu-nav {
+   display: flex;
+   column-gap: 43px;
+   flex-wrap: wrap;
+   @media screen and (min-width: 1440px) {
+      column-gap: 80px;
+   }
+
+   // .menu-nav__items
+   &__items {
+      padding-top: 30px;
+      @media screen and (min-width: 640px) {
+         padding-top: 0;
+      }
+   }
+
+   // .menu-nav__link
+   &__link {
+      font-size: 14px;
+      line-height: 21px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      position: relative;
+   }
+   &__link {
+      border-bottom-width: 2px;
+      background-image: linear-gradient(270deg, #008fa9 0%, #4b5ab3 66.67%, #6c35ae 100%);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size 500ms;
+      padding-bottom: 3px;
+   }
+   &__link:hover {
+      background-size: 100% 2px;
+   }
+}
+.svg-linkedin-dims {
+   cursor: pointer;
+   background: #ffff;
+   border-radius: 2px;
+   transition: all 500ms ease-in;
+}
+.svg-linkedin-dims:hover {
+   background: linear-gradient(270deg, #008fa9 0%, #4b5ab3 66.67%, #6c35ae 100%);
+}
