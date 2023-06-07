@@ -25,9 +25,13 @@ export function typeText() {
       setTimeout(typeText, speed);
    }
 }
+export function init() {
+   AOS.init()
+};
 
 typeText();
-AOS.init();
+// AOS.init();
+init()
 
 
 
