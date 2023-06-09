@@ -48,6 +48,7 @@ body {
   color: #ffffff;
   background-color: #0f1624;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -430,6 +431,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: #ffffff;
   }
 }
 .footer-body__title {
@@ -461,6 +463,11 @@ ul {
     padding-top: 0;
     display: flex;
     column-gap: 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer-body__menu {
+    column-gap: 115px;
   }
 }
 .footer-body__list {
