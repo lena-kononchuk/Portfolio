@@ -4,8 +4,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css?_v=20230607230506">
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230607230506" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <title>Portfolio</title>
 </head>
 
@@ -23,9 +23,9 @@
                <li class="menu-nav__items"><a class="menu-nav__link" href="">About me</a> </li>
             </ul>
          </div>
-         <div class="header-body__social-media">
+         <a class="header-body__social-media" href="https://www.linkedin.com/in/lena-pilipenko/" target="_blank">
             <img src="img/icons/icons.svg#linkedin" class="svg-linkedin-dims" alt="linkedin" width="27" height="27">
-         </div>
+         </a>
       </div>
    </div>
 </header>
@@ -59,7 +59,7 @@
                   <div class="circle circle-shrink"></div>
                </div>
                <div class="hero-page__avatar">
-                  <picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="avatar" width="207" height="207"></picture>
+                  <img src="img/avatar.jpg" alt="avatar" width="207" height="207">
                </div>
 
             </div>
@@ -71,7 +71,7 @@
       <div class="projects-page__body">
          <article data-aos="zoom-in-right" data-aos-duration="500" class=" projects-page__card card">
             <div class="card__images">
-               <picture><source srcset="img/ringo.webp" type="image/webp"><img src="img/ringo.png" alt="Furniture Websites"></picture>
+               <img src="img/ringo.png" alt="Furniture Websites">
             </div>
             <h3 class="card__title">Furniture Websites</h3>
             <div class="card__subtitle">Responsive Furniture Website landing page Using HTML, CSS(SCSS), JS</div>
@@ -85,7 +85,7 @@
          </article>
          <article data-aos="zoom-in-left" data-aos-duration="500" class="projects-page__card card">
             <div class="card__images">
-               <picture><source srcset="img/portfolio.webp" type="image/webp"><img src="img/portfolio.png" alt="Portfolio"></picture>
+               <img src="img/portfolio.png" alt="Portfolio">
             </div>
             <h3 class="card__title">Portfolio</h3>
             <div class="card__subtitle">Responsive layout for landing page for front-end developer. HTML5, CSS3
@@ -100,7 +100,7 @@
          </article>
          <article data-aos="zoom-in-right" data-aos-duration="500" class="projects-page__card card">
             <div class="card__images">
-               <picture><source srcset="img/coffe.webp" type="image/webp"><img src="img/coffe.png" alt="Coffe landing page"></picture>
+               <img src="img/coffe.png" alt="Coffe landing page">
             </div>
             <h3 class="card__title">Coffe store</h3>
             <div class="card__subtitle">Responsive Coffee Shop Website landing page Using HTML5/SCSS/JavaScript</div>
@@ -115,7 +115,7 @@
          </article>
          <article data-aos="zoom-in-left" data-aos-duration="500" class="projects-page__card card">
             <div class="card__images">
-               <picture><source srcset="img/spk.webp" type="image/webp"><img src="img/spk.png" alt="IT-SPK landing page"></picture>
+               <img src="img/spk.png" alt="IT-SPK landing page">
             </div>
             <h3 class="card__title">IT-SPK landing page </h3>
             <div class="card__subtitle">Responsive landing page HTML5/SCSS/JavaScript,Gulp</div>
@@ -128,7 +128,7 @@
          </article>
          <article data-aos="zoom-in-right" data-aos-duration="500" class="projects-page__card card">
             <div class="card__images">
-               <picture><source srcset="img/zlatmax.webp" type="image/webp"><img src="img/zlatmax.png" alt="Online Shop Zlatmax"></picture>
+               <img src="img/zlatmax.png" alt="Online Shop Zlatmax">
             </div>
             <h3 class="card__title">Online Shop Zlatmax</h3>
             <div class="card__subtitle">Online Shop “Zlatmax” - HTML (HTML5), CSS (CSS3), JavaScript, SCSS/Sass, GULP,
@@ -142,7 +142,7 @@
          </article>
          <article data-aos="zoom-in-left" data-aos-duration="500" class="projects-page__card card">
             <div class="card__images">
-               <picture><source srcset="img/forecast.webp" type="image/webp"><img src="img/forecast.png" alt=" Weather App"></picture>
+               <img src="img/forecast.png" alt=" Weather App">
             </div>
             <h3 class="card__title">React JS Weather App</h3>
             <div class="card__subtitle">This web app on React displays the live weather data of any place in the world.
@@ -162,11 +162,13 @@
          <div class="container">
             <div class="projects-page__title title">Technologies</div>
             <ul class="technologies-menu">
-               <li class="technologies-menu__list">Frontend: HTML5/CSS3(SASS(SCSS)), JavaScript (basic).</li>
+               <li class="technologies-menu__list">Frontend: HTML5, CSS3 (including SASS/SCSS), JavaScript (basic
+                  proficiency).</li>
                <li class="technologies-menu__list">Graphic Tools: Figma, Photoshop.</li>
-               <li class="technologies-menu__list">Version Control system: Git, Github.</li>
-               <li class="technologies-menu__list">Gulp(basic).</li>
-               <li class="technologies-menu__list">BEM methodology.</li>
+               <li class="technologies-menu__list">Version Control System: Git, GitHub.</li>
+               <li class="technologies-menu__list">Build Tools: Gulp (basic proficiency).</li>
+               <li class="technologies-menu__list">Methodology: BEM.</li>
+               <li class="technologies-menu__list">English Language: A2+ level.</li>
             </ul>
          </div>
       </section>
@@ -174,44 +176,50 @@
          <div class="container">
             <div class="summary-page__title title">About Me</div>
             <div class="summary-page__subtitle">
-               I have no commercial experience as a Front-End developer, but I believe that with determination and hard
-               work, anything
-               is possible.
-
-               During my four-year tenure as an IT recruiter in outsourcing and outstaffing companies, I conducted
-               numerous interviews
-               and witnessed candidates without technical education or prior experience securing exciting projects. If
-               they could do
-               it, I am confident that I can too!
-
-               I completed the Junior Front-End Developer courses with honors at Main Academy from March 2021 to October
-               2021. The
-               program covered HTML/CSS, JavaScript, jQuery, Bootstrap, and Photoshop in a comprehensive 140-hour
-               curriculum.
-
-               After completing the courses, I continued to study Front-End development independently, expanding my
-               knowledge beyond
-               what I learned in the program. I have applied this knowledge in practical projects and achieved tangible
-               results.
-
-               I am dedicated to continuously improving my skills and knowledge in the field. I would greatly appreciate
-               the
-               opportunity to complete a test task to demonstrate my abilities.
-
-               I am seeking a Trainee/Junior position where I can contribute my current skills while being open to
-               learning
-               anything necessary
-               for the job.
+               <p>I have no commercial experience as a Front-End developer, but I believe that with determination and
+                  hard
+                  work, anything
+                  is possible.</p>
+               <p>During my four-year experience as an IT recruiter, I had the opportunity to work with clients from the
+                  United States,
+                  the Middle East, and Europe. This exposure ignited my passion for the IT industry and motivated me to
+                  pursue a career as
+                  a Front-End developer</p>
+               <p> I completed the Junior Front-End Developer courses with honors at Main Academy from March 2021 to
+                  October
+                  2021. The
+                  program covered HTML/CSS, JavaScript, jQuery, Bootstrap, and Photoshop in a comprehensive 140-hour
+                  curriculum.
+               </p>
+               <p>I completed the Junior Front-End Developer courses with honors at Main Academy from March 2021 to
+                  October
+                  2021. The
+                  program covered HTML/CSS, JavaScript, jQuery, Bootstrap, and Photoshop in a comprehensive 140-hour
+                  curriculum.
+               </p>
+               <p>After completing the courses, I continued to study Front-End development independently, expanding my
+                  knowledge beyond
+                  what I learned in the program. I have applied this knowledge in practical projects and achieved
+                  tangible
+                  I am dedicated to continuously improving my skills and knowledge in the field. I would greatly
+                  appreciate
+                  the
+                  opportunity to complete a test task to demonstrate my abilities.
+               </p>
+               <p>I am seeking a Trainee/Junior position where I can contribute my current skills while being open to
+                  learning
+                  anything necessary
+                  for the job.</p>
             </div>
          </div>
       </section>
       <section class="education-page">
          <div class="container">
             <div class="education-page__body">
-               <h2 class="education-page__title title">EDUCATION and CERTIFICATES</h2>
-               <ul class="education-page__menu">
-                  <li class="education-page__list">Kherson State Agricultural University (Management) 2010-2014</li>
-                  <li class="education-page__list">Main Academy (Junior Front-end Developer) 2021-2021</li>
+               <h2 class="education-page__title title">Education and Certificates</h2>
+               <p class="education-page__list">Junior Front-End Developer Certification, Main Academy, March 2021 -
+                  October 2021, Covered topics: HTML/CSS, JavaScript, jQuery, Bootstrap, Photoshop</p>
+               <p class="education-page__list">Kherson State Agricultural University (Management) 2010-2014</p>
                </ul>
             </div>
       </section>
@@ -228,10 +236,13 @@
                   @Lena_Kononchuk</a>
             </li>
          </ul>
+         <a href="https://www.linkedin.com/in/lena-pilipenko/" class="footer-body__social-media" target="_blank">
+            <img src="img/icons/icons.svg#linkedin" class="svg-linkedin-dims" alt="linkedin" width="27" height="27">
+         </a>
       </div>
    </div>
 </footer>
-   <script src="js/app.min.js?_v=20230607230506"></script>
+   <script src="js/app.min.js"></script>
 
 </body>
 
