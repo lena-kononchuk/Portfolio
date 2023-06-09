@@ -211,15 +211,38 @@
    font-weight: 500;
    font-size: 12px;
    line-height: 18px;
+   @media screen and (min-width: 992px) {
+      font-size: 18px;
+      line-height: 25px;
+   }
 }
 .technologies-menu {
    // .technologies-menu__list
    &__list {
-      border-bottom: 2px solid #6978d1;
-      box-shadow: 0px 10px 20px rgba(0, 178, 255, 0.35);
+      position: relative;
+      padding-left: 15px;
+      @media screen and (min-width: 992px) {
+         padding-left: 25px;
+      }
+   }
+   &__list::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 7px;
+      height: 7px;
+      background: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
+      box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
+      border-radius: 50%;
+      @media screen and (min-width: 992px) {
+         width: 10px;
+         height: 10px;
+         top: 7px;
+      }
    }
    &__list:not(:last-child) {
-      margin-bottom: 15px;
+      margin-bottom: 8px;
    }
 }
 .summary-page {
@@ -227,14 +250,20 @@
    // .summary-page__title
 
    &__title {
+      padding-bottom: 38px;
    }
 
    // .summary-page__subtitle
 
    &__subtitle {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #929eb0;
    }
 }
 .education-page {
+   padding-top: 50px;
    // .education-page__body
 
    &__body {
@@ -243,6 +272,7 @@
    // .education-page__title
 
    &__title {
+      padding-bottom: 10px;
    }
 
    // .education-page__menu
@@ -253,5 +283,9 @@
    // .education-page__list
 
    &__list {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #929eb0;
    }
 }

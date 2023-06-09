@@ -87,7 +87,7 @@ header {
    cursor: pointer;
    background: #ffff;
    border-radius: 2px;
-   transition: all 500ms ease-in;
+   transition: all 500ms ease-in-out;
 }
 .svg-linkedin-dims:hover {
    background: linear-gradient(270deg, #008fa9 0%, #4b5ab3 66.67%, #6c35ae 100%);
