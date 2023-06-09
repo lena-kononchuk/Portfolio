@@ -10,6 +10,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      color: #ffffff;
    }
 
    // .footer-body__title
@@ -39,6 +40,9 @@
          padding-top: 0;
          display: flex;
          column-gap: 15px;
+      }
+      @media screen and (min-width: 1440px) {
+         column-gap: 115px;
       }
    }
 
