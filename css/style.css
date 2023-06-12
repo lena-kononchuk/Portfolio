@@ -909,19 +909,19 @@ header {
 
 @media screen and (min-width: 320px) {
   .container {
-    width: 320px;
+    width: 280px;
   }
 }
 
 @media screen and (min-width: 390px) {
   .container {
-    width: 390px;
+    width: 350px;
   }
 }
 
 @media screen and (min-width: 414px) {
   .container {
-    width: 414px;
+    width: 390px;
   }
 }
 
