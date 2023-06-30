@@ -68,12 +68,15 @@
       @media screen and (min-width: 992px) {
          min-width: 120px;
       }
+      // @media screen and (min-width: 992px) {
+      //    min-width: 1px;
+      // }
       @media screen and (min-width: 992px) {
-         min-width: 150px;
+         min-width: 130px;
       }
       @media screen and (min-width: 1440px) {
          // padding: 25px 50px;
-         // min-width: 190px;
+         min-width: 190px;
          // text-align: center;
       }
    }
