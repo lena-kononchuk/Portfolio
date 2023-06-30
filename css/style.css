@@ -845,8 +845,6 @@ header {
   width: 7px;
   height: 7px;
   background-color: #6978d1;
-  -webkit-box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
-          box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
   border-radius: 50%;
   overflow: hidden;
 }
