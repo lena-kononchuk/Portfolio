@@ -711,6 +711,7 @@ header {
   background: linear-gradient(to top, #13adc7, #6978d1, #945dd6);
   -webkit-mask-image: radial-gradient(circle, transparent 69%, #000 31%);
   mask-image: radial-gradient(circle, transparent 70%, #000 21%);
+  overflow: hidden;
 }
 
 .hero-page .circle {
@@ -849,6 +850,7 @@ header {
   -webkit-box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
           box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .technologies-menu__list:not(:last-child) {
