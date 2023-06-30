@@ -136,6 +136,7 @@
       top: -20px;
       width: 400px;
       height: 400px;
+      // background-color: #6978d1;
       background: linear-gradient(to top, #13adc7, #6978d1, #945dd6);
       -webkit-mask-image: radial-gradient(circle, transparent 70%, #000 11%);
       mask-image: radial-gradient(circle, transparent 70%, #000 11%);
@@ -170,7 +171,9 @@
       top: 100px;
       width: 150px;
       height: 150px;
+      // background-color: #6978d1;
       background: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
+      mask-image: radial-gradient(circle, transparent 70%, #000 11%);
       box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
       animation: shrink 3s infinite;
       @media screen and (min-width: 640px) {
@@ -233,7 +236,9 @@
       top: 5px;
       width: 7px;
       height: 7px;
+      // background-color: #6978d1;
       background: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
+      mask-image: radial-gradient(circle, transparent 70%, #000 11%);
       box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
       border-radius: 50%;
       overflow: hidden;
