@@ -1096,7 +1096,7 @@ header {
   }
 
   .card__button-button {
-    min-width: 150px;
+    min-width: 130px;
   }
 
   .footer-body__title {
@@ -1171,6 +1171,10 @@ header {
 @media screen and (min-width: 1440px) {
   .container {
     width: 1159px;
+  }
+
+  .card__button-button {
+    min-width: 190px;
   }
 
   .footer-body__menu {
