@@ -25,7 +25,9 @@
       border-right: 2px solid #945dd6; /* Граница, которая будет создавать эффект печати */
       white-space: nowrap; /* Текст не будет переноситься на новую строку */
       overflow: hidden; /* Скрытие текста, который еще не напечатан */
-      animation: typing 3s steps(20) forwards, flashing 1s infinite;
+      animation:
+         typing 3s steps(20) forwards,
+         flashing 1s infinite;
 
       @keyframes typing {
          from {
@@ -211,9 +213,9 @@
    padding-top: 50px;
    font-weight: 500;
    font-size: 12px;
-   line-height: 18px;
+   line-height: 10px;
    @media screen and (min-width: 992px) {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 25px;
    }
 }
@@ -243,16 +245,16 @@
          top: 7px;
       }
    }
-   &__list:not(:last-child) {
-      margin-bottom: 8px;
-   }
+   // &__list:not(:last-child) {
+   //    margin-bottom: 8px;
+   // }
 }
 .summary-page {
    padding-top: 70px;
    // .summary-page__title
 
    &__title {
-      padding-bottom: 38px;
+      padding-bottom: 10px;
    }
 
    // .summary-page__subtitle
@@ -260,7 +262,7 @@
    &__subtitle {
       font-weight: 500;
       font-size: 14px;
-      line-height: 21px;
+      line-height: 22px;
       color: #929eb0;
    }
 }
@@ -289,5 +291,6 @@
       font-size: 14px;
       line-height: 20px;
       color: #929eb0;
+      padding-bottom: 13px;
    }
 }

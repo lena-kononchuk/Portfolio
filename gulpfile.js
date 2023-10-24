@@ -26,7 +26,7 @@ import { img } from "./gulp/tasks/img.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { svgSpriteTask } from "./gulp/tasks/svg-sprite.js";
 import { zip } from "./gulp/tasks/zip.js";
-import ghPages from "gulp-gh-pages";
+import { ghPages } from "gulp-gh-pages";
 // import { ftp } from "./gulp/tasks/ftp.js";
 
 // Наблюдатель за изменениями в файлах
