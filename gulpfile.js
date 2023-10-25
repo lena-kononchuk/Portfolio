@@ -5,6 +5,8 @@ import { path } from "./gulp/config/path.js";
 // Import paths
 import { plugins } from "./gulp/config/plugins.js";
 
+const ghPages = require('gulp-gh-pages');
+
 
 // Pass values to global variable
 global.app = {
@@ -26,8 +28,7 @@ import { img } from "./gulp/tasks/img.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { svgSpriteTask } from "./gulp/tasks/svg-sprite.js";
 import { zip } from "./gulp/tasks/zip.js";
-import pkg from 'gulp-gh-pages';
-const { ghPages } = pkg;
+
 
 // Наблюдатель за изменениями в файлах
 function watcher() {
@@ -46,6 +47,7 @@ const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, img, sv
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+
 
 
 const build = gulp.series(reset, mainTasks);
