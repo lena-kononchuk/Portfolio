@@ -4,18 +4,26 @@
    max-width: 100%;
    border-radius: 15px;
    border: 1px solid #945dd6;
-   padding: 20px;
+   padding: 43px;
    cursor: pointer;
+   @media screen and (min-width: 320px) {
+      padding: 15px;
+   }
    @media screen and (min-width: 640px) {
-      width: 40%;
+      width: 100%;
       column-gap: 10px;
    }
    @media screen and (min-width: 992px) {
-      // width: 256px;
+      width: 39%;
       column-gap: 10px;
    }
-   @media screen and (min-width: 1200px) {
-      // width: 422px;
+   @media screen and (min-width: 768px) {
+      width: 36%;
+      column-gap: 10px;
+      padding: 40px;
+   }
+   @media screen and (min-width: 1000px) {
+      width: 39%;
    }
    @media screen and (min-width: 1440px) {
       // width: 500px;
@@ -23,7 +31,12 @@
 
    // .card__images
 
-   &__images {
+   &__images img {
+      max-width: 480px;
+      width: 100%;
+      @media screen and (min-width: 640px) {
+         max-width: 100%;
+      }
    }
 
    // .card__title
@@ -61,6 +74,15 @@
 
    &__button-button {
       padding: 15px 25px;
+      @media screen and (min-width: 320px) {
+         min-width: 92px;
+         padding: 10px 15px;
+         text-align: center;
+      }
+      @media screen and (min-width: 640px) {
+         min-width: 180px;
+         text-align: center;
+      }
       @media screen and (min-width: 768px) {
          min-width: 80px;
          text-align: center;

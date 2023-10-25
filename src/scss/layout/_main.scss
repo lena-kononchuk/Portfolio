@@ -1,5 +1,8 @@
 .main {
-   padding-top: 60px;
+   padding-top: 150px;
+   @media screen and (min-width: 320px) {
+      padding-top: 60px;
+   }
 }
 .hero-page {
    // .hero-page__body
@@ -84,6 +87,9 @@
       order: 2;
       padding: 45px 0 60px 0;
       z-index: 10;
+      @media screen and (max-width: 320px) {
+         // margin: 0 auto;
+      }
    }
 
    // .hero-page__avatar
@@ -104,6 +110,9 @@
       }
       @media screen and (min-width: 992px) {
          right: 86px;
+      }
+      @media screen and (max-width: 320px) {
+         margin: 0;
       }
    }
    &__avatar img {
@@ -212,8 +221,8 @@
 .technologies-page {
    padding-top: 50px;
    font-weight: 500;
-   font-size: 12px;
-   line-height: 10px;
+   font-size: 14px;
+   line-height: 21px;
    @media screen and (min-width: 992px) {
       font-size: 14px;
       line-height: 25px;
@@ -242,6 +251,9 @@
       @media screen and (min-width: 992px) {
          width: 10px;
          height: 10px;
+         top: 7px;
+      }
+      @media screen and (min-width: 320px) {
          top: 7px;
       }
    }
