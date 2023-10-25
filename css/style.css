@@ -350,6 +350,7 @@ ul {
 .button {
   padding: 17px 30px;
   background: linear-gradient(270deg, #008fa9 0%, #4b5ab3 66.67%, #6c35ae 100%);
+  box-shadow: 0px 10px 30px rgba(147, 94, 214, 0.35);
   border-radius: 43.5977px;
   border: none;
   text-decoration: none;
@@ -363,6 +364,7 @@ ul {
 
 .button:hover {
   background: linear-gradient(270deg, #31cbe5 0%, #8796ef 66.67%, #b27bf4 100%);
+  box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.5);
   border-radius: 60px;
 }
 
@@ -929,6 +931,7 @@ header {
   width: 150px;
   height: 150px;
   background: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
+  box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
   animation: shrink 3s infinite;
 }
 @media screen and (min-width: 640px) {
@@ -996,6 +999,7 @@ header {
   width: 7px;
   height: 7px;
   background: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
+  box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
   border-radius: 50%;
   overflow: hidden;
 }
