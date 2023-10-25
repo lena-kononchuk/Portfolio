@@ -239,6 +239,95 @@ template {
   display: none;
 }
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
 h1,
 h2,
 h3,
@@ -359,7 +448,7 @@ ul {
 }
 @media screen and (min-width: 992px) {
   .title {
-    font-size: 26px;
+    font-size: 16px;
     line-height: 28px;
   }
 }
@@ -479,7 +568,7 @@ ul {
     order: 2;
     padding-top: 0;
     display: flex;
-    column-gap: 15px;
+    column-gap: 25px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -493,7 +582,7 @@ ul {
 }
 @media screen and (min-width: 992px) {
   .footer-body__list {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 27px;
   }
 }
@@ -510,20 +599,6 @@ ul {
 }
 .footer-body__link:hover {
   background-size: 100% 2px;
-}
-.footer-body .footer-body__social-media {
-  position: absolute;
-  right: 0;
-  top: 45px;
-  order: 2;
-}
-@media screen and (min-width: 640px) {
-  .footer-body .footer-body__social-media {
-    order: 3;
-    position: relative;
-    top: 0;
-    right: 0;
-  }
 }
 
 header {
@@ -844,11 +919,11 @@ header {
   padding-top: 50px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 10px;
 }
 @media screen and (min-width: 992px) {
   .technologies-page {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 25px;
   }
 }
@@ -881,20 +956,17 @@ header {
     top: 7px;
   }
 }
-.technologies-menu__list:not(:last-child) {
-  margin-bottom: 8px;
-}
 
 .summary-page {
   padding-top: 70px;
 }
 .summary-page__title {
-  padding-bottom: 38px;
+  padding-bottom: 10px;
 }
 .summary-page__subtitle {
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 22px;
   color: #929eb0;
 }
 
@@ -909,6 +981,7 @@ header {
   font-size: 14px;
   line-height: 20px;
   color: #929eb0;
+  padding-bottom: 13px;
 }
 
 .projects-page {
@@ -916,7 +989,7 @@ header {
   color: #ffffff;
 }
 .projects-page__title {
-  padding-bottom: 30px;
+  padding-bottom: 22px;
 }
 .projects-page__body {
   display: flex;
