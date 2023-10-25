@@ -26,8 +26,8 @@ import { img } from "./gulp/tasks/img.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { svgSpriteTask } from "./gulp/tasks/svg-sprite.js";
 import { zip } from "./gulp/tasks/zip.js";
-// import pkg from 'gulp-gh-pages';
-// const { ghPages } = pkg;
+import pkg from 'gulp-gh-pages';
+const { ghPages } = pkg;
 
 // Наблюдатель за изменениями в файлах
 function watcher() {
