@@ -4,8 +4,9 @@ import gulp from "gulp";
 import { path } from "./gulp/config/path.js";
 // Import paths
 import { plugins } from "./gulp/config/plugins.js";
-// const ghpages = require('gh-pages');
-// Pass values to global variable
+
+import { deploy } from './gulp/tasks/deploy.js';
+
 global.app = {
    isBuild: process.argv.includes('--build'),
    isDev: !process.argv.includes('--build'),
@@ -25,7 +26,7 @@ import { img } from "./gulp/tasks/img.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { svgSpriteTask } from "./gulp/tasks/svg-sprite.js";
 import { zip } from "./gulp/tasks/zip.js";
-// import ghpages from "gulp-gh-pages";
+// const { deploy } = require('./gulp/tasks/deploy.js');
 
 
 // Наблюдатель за изменениями в файлах
@@ -58,14 +59,11 @@ export { svgSpriteTask }
 export { dev }
 export { build }
 export { deployZIP }
+
 // export { deployFTP }
 
 // Выполнение сценария по умолчанию
-gulp.task('default', dev,
-);
-// // Выполнение сценария по умолчанию
-// gulp.task('default', dev, function () {
-//    return gulp.src('./build?**/*')
-//       .pipe(ghPages());
-// });
-
+// gulp.task('default', dev,
+// );
+gulp.task('deploy', deploy);
+gulp.task('default', gulp.series(dev, deploy));
