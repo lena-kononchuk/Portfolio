@@ -74,9 +74,9 @@
 
    &__button-button {
       padding: 15px 25px;
-      @media screen and (min-width: 320px) {
-         min-width: 92px;
-         padding: 10px 15px;
+      @media screen and (max-width: 320px) {
+         min-width: 65px;
+         // padding: 10px 15px;
          text-align: center;
       }
       @media screen and (min-width: 640px) {
