@@ -64,28 +64,43 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 21px;
-      @media screen and (min-width: 640px) {
+
+      @media screen and (min-width: 414px) {
          column-gap: 10px;
          justify-content: space-between;
       }
    }
-
+   @media screen and (max-width: 414px) {
+      .card__button {
+         flex-direction: column;
+         row-gap: 15px;
+         text-align: center;
+      }
+   }
    // .card__button-button
 
    &__button-button {
       padding: 15px 25px;
-      @media screen and (max-width: 320px) {
-         min-width: 65px;
-         // padding: 10px 15px;
+      // @media screen and (max-width: 320px) {
+      //    min-width: 75px;
+      //    // padding: 10px 15px;
+      //    text-align: center;
+      // }
+      // @media screen and (min-width: 320px) {
+      //    min-width: 65px;
+      //    // padding: 10px 15px;
+      //    text-align: center;
+      // }
+      @media screen and (min-width: 414px) {
+         min-width: 95px;
          text-align: center;
       }
-      @media screen and (min-width: 640px) {
-         min-width: 180px;
-         text-align: center;
+      @media screen and (min-width: 540px) {
+         min-width: 140px;
+         // text-align: center;
       }
       @media screen and (min-width: 768px) {
          min-width: 80px;
-         text-align: center;
       }
       @media screen and (min-width: 992px) {
          min-width: 120px;
