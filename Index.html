@@ -4,8 +4,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css">
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240619171825">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20240619171825" rel="stylesheet">
    <title>Portfolio</title>
 </head>
 
@@ -20,7 +20,7 @@
             <ul class="menu-nav">
                <li class="menu-nav__items"><a class="menu-nav__link" href="#projects">Projects</a> </li>
                <li class="menu-nav__items"><a class="menu-nav__link" href="#technologies">Technologies</a> </li>
-               <li class="menu-nav__items"><a class="menu-nav__link" href="#about">About me</a> </li>
+               <li class="menu-nav__items"><a class="menu-nav__link" href="#experience">About me</a> </li>
             </ul>
          </div>
          <a class="header-body__social-media" href="https://www.linkedin.com/in/lena-pilipenko/" target="_blank">
@@ -42,15 +42,16 @@
                </div>
 
                <div class="hero-page__subtext" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="2000">
-                  I seek an opportunity to grow professionally as a programmer. I am persistent and hardworking, focused
-                  on results. I
-                  really like to see the result of my work and I want to get into a team of like-minded people, create
-                  cool applications
-                  together, develop, and finally obtain
-                  commercial experience.
+                  Motivated, adaptable, and responsible Front-End Developer with 7 months of hands-on experience in web
+                  development.
+                  Dedicated to achieving
+                  results, I work persistently until tasks are successfully completed. My goal is to keep learning, grow
+                  in this field,
+                  and create useful applications for companies and communities. I am eager to take on challenges, learn,
+                  and work well in
+                  a team.
                </div>
                <div class="hero-page__button">
-                  <!-- <button class="button" id="download-button">Download CV</button> -->
                   <a class="button" href="./img/resume.pdf" download>Download CV</a>
                </div>
                <div class="hero-page__circle">
@@ -58,19 +59,71 @@
                   <div class="circle circle-shrink"></div>
                </div>
                <div class="hero-page__avatar">
-                  <img src="img/avatar.jpg" alt="avatar" width="207" height="207">
+                  <picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="avatar" width="207" height="207"></picture>
                </div>
 
             </div>
          </div>
       </section>
+      <section class="summary-page" id="experience">
+         <div class="container">
+            <div class="summary-page__title title">Work Experience</div>
+            <div class="summary-page__subtitle">
+               <div>Junior Frontend Developer</div>
+               <div style="margin-bottom: 10px;">Rocking Tech - December 1, 2023 - July 1, 2024</div>
+               <div style="margin-bottom: 10px;">My responsibilities included parallel work on 4
+                  projects on
+                  Vue.js and Laravel
+                  Vite, with a primary focus on:</div>
+               <ul class="technologies-menu">
+                  <li> - bug fixing and troubleshooting: Addressed issues in Vue.js and
+                     Laravel Vite projects, including debugging, style
+                     adjustments, and admin panel maintenance;
+                  </li>
+                  <li> - enhanced codebase efficiency and maintainability through
+                     systematic code improvements.- implemented client-provided
+                     designs into HTML/CSS layouts;</li>
+                  <li> - created adaptive layouts ensuring optimal display across
+                     devices;</li>
+                  <li> - applied BEM methodology for structured and scalable CSS
+                     development;</li>
+                  <li> - integrated Axios for efficient HTTP requests and API handling;
+                  </li>
+                  <li> - built reusable components using Vue 3 features like the
+                     Composition API and Teleport;</li>
+                  <li>- developed Vue applications with Vue Router for seamless SPA
+                     navigation and state management.</li>
+                  <li>- collaborated closely with the CTO based in the UK, engaging in task discussions via Trello and
+                     Slack.
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
       <section class="projects-page" id="projects">
    <div class="container">
-      <div class="projects-page__title title">Projects</div>
+      <div class="projects-page__title title">Training Projects</div>
       <div class="projects-page__body">
          <article data-aos="zoom-in-right" data-aos-duration="1000" class=" projects-page__card card">
+            <a target="_blank" href="https://github.com/lena-kononchuk/Laravel-vite-vue3" class="card__images">
+               <picture><source srcset="img/relocation.webp" type="image/webp"><img src="img/relocation.png" alt="Furniture Websites"></picture>
+            </a>
+            <h3 class="card__title">Responsive Relocation Website</h3>
+            <div class="card__subtitle"> Technologies Used: Vue.js (Vue 3), Laravel, Vite, Vue Router, GSAP (GreenSock
+               Animation Platform), integration with 3rd party services and
+               APIs</div>
+            <div class="card__button">
+               <!-- <a target="_blank" class="card__button-button button"
+                  href="https://lena-kononchuk.github.io/Ringo/Index.html">Live
+                  preview</a> -->
+               <a target="_blank" class="card__button-button button" href="
+                  https://github.com/lena-kononchuk/Laravel-vite-vue3">
+                  GitHub</a>
+            </div>
+         </article>
+         <article data-aos="zoom-in-right" data-aos-duration="1000" class=" projects-page__card card">
             <a target="_blank" href=" https://lena-kononchuk.github.io/Ringo/Index.html" class="card__images">
-               <img src="img/ringo.png" alt="Furniture Websites">
+               <picture><source srcset="img/ringo.webp" type="image/webp"><img src="img/ringo.png" alt="Furniture Websites"></picture>
             </a>
             <h3 class="card__title">Responsive Furniture Website Landing Page</h3>
             <div class="card__subtitle"> Technologies Used: HTML5, CSS3 (SCSS), JavaScript, Gulp</div>
@@ -84,7 +137,7 @@
          </article>
          <article data-aos="zoom-in-left" data-aos-duration="1000" class="projects-page__card card">
             <a target="_blank" href=" https://lena-kononchuk.github.io/Portfolio/Index.html" class="card__images">
-               <img src="img/portfolio.png" alt="Portfolio">
+               <picture><source srcset="img/portfolio.webp" type="image/webp"><img src="img/portfolio.png" alt="Portfolio"></picture>
             </a>
             <h3 class="card__title">Responsive Landing Page for Front-End Developer.</h3>
             <div class="card__subtitle">Technologies Used: HTML5, CSS3 (SCSS), JavaScript, Gulp</div>
@@ -98,7 +151,7 @@
          </article>
          <article data-aos="zoom-in-right" data-aos-duration="1000" class="projects-page__card card">
             <a target="_blank" href=" https://lena-kononchuk.github.io/CoffeStyle/" class="card__images">
-               <img src="img/coffe.png" alt="Coffee shop landing page">
+               <picture><source srcset="img/coffe.webp" type="image/webp"><img src="img/coffe.png" alt="Coffee shop landing page"></picture>
             </a>
             <h3 class="card__title">Responsive Coffee Shop Website Landing Page</h3>
             <div class="card__subtitle">Technologies Used: HTML5, CSS (SCSS), JavaScript</div>
@@ -111,9 +164,9 @@
                   GitHub</a>
             </div>
          </article>
-         <article data-aos="zoom-in-left" data-aos-duration="1000" class="projects-page__card card">
+         <!-- <article data-aos="zoom-in-left" data-aos-duration="1000" class="projects-page__card card">
             <a target="_blank" href=" https://lena-kononchuk.github.io/IT-SPK/" class="card__images">
-               <img src="img/spk.png" alt="IT-SPK landing page">
+               <picture><source srcset="img/spk.webp" type="image/webp"><img src="img/spk.png" alt="IT-SPK landing page"></picture>
             </a>
             <h3 class="card__title">Responsive IT Services Landing Page</h3>
             <div class="card__subtitle">Technologies Used: HTML5, CSS (SCSS), JavaScript, Gulp</div>
@@ -123,10 +176,10 @@
                <a target="_blank" class="card__button-button button"
                   href="https://github.com/lena-kononchuk/IT-SPK">GitHub</a>
             </div>
-         </article>
+         </article> -->
          <article data-aos="zoom-in-right" data-aos-duration="1000" class="projects-page__card card">
             <a target="_blank" href=" https://lena-kononchuk.github.io/Zlatmax/" class="card__images">
-               <img src="img/zlatmax.png" alt="Online Shop Zlatmax">
+               <picture><source srcset="img/zlatmax.webp" type="image/webp"><img src="img/zlatmax.png" alt="Online Shop Zlatmax"></picture>
             </a>
             <h3 class="card__title">Online Shop "Zlatmax"</h3>
             <div class="card__subtitle">Technologies Used: HTML (HTML5), CSS (CSS3), JavaScript, SCSS (Sass), Gulp,
@@ -140,7 +193,7 @@
          </article>
          <article data-aos="zoom-in-left" data-aos-duration="1000" class="projects-page__card card">
             <a target="_blank" href=" https://lena-kononchuk.github.io/forecast/#/" class="card__images">
-               <img src="img/forecast.png" alt=" Weather App">
+               <picture><source srcset="img/forecast.webp" type="image/webp"><img src="img/forecast.png" alt=" Weather App"></picture>
             </a>
             <h3 class="card__title">Weather Forecast React App</h3>
             <div class="card__subtitle">Technologies Used: HTML, CSS, React, API integration, React Router
@@ -158,48 +211,24 @@
 </section>
       <section class="technologies-page" id="technologies">
          <div class="container">
-            <div class="projects-page__title title">Technologies</div>
+            <div class="projects-page__title title">Technical Skills:</div>
             <ul class="technologies-menu">
-               <li class="technologies-menu__list">Frontend: HTML5, CSS3 (including SCSS), JavaScript</li>
-               <li class="technologies-menu__list">Graphic Tools: Figma, Photoshop.</li>
-               <li class="technologies-menu__list">Version Control System: Git, GitHub.</li>
-               <li class="technologies-menu__list">Build Tools: Gulp (basic proficiency).</li>
-               <li class="technologies-menu__list">Methodology: BEM.</li>
-               <li class="technologies-menu__list">English Language: A2+ level.</li>
+               <li class="technologies-menu__list">Frontend: HTML5, CSS3 (including SCSS), JavaScript, Vue.js
+               </li>
+               <li class="technologies-menu__list">Backend: Laravel</li>
+               <li class="technologies-menu__list">Build Tools: Vite, Gulp (basic proficiency)</li>
+               <li class="technologies-menu__list">Version Control System: Git, GitHub</li>
+               <li class="technologies-menu__list">Containerization: Docker</li>
+               <li class="technologies-menu__list">API Integration: Experience with 3rd party services and APIs;
+                  proficient in using Axios for efficient
+                  HTTP requests and
+                  handling REST APIs.</li>
+               <li class="technologies-menu__list">Graphic Tools: Figma, Photoshop</li>
+               <li class="technologies-menu__list">English Language: B1 level</li>
             </ul>
          </div>
       </section>
-      <section class="summary-page" id="about">
-         <div class="container">
-            <div class="summary-page__title title">About Me</div>
-            <div class="summary-page__subtitle">
-               <p>Even though I haven't worked as a Front-End developer in a professional setting, I genuinely believe
-                  that with
-                  determination and hard work, we can achieve just about anything.</p>
-               <p>During my four years as an IT recruiter, I had the chance to work with clients from the US, Middle
-                  East, and Europe.
-                  This experience really got me excited about the IT field and motivated me to switch to a career as a
-                  Front-End
-                  developer.
-               </p>
-               <p> I finished the Junior Front-End Developer courses with flying colors at Main Academy from March 2021
-                  to October 2021.
-                  The program covered HTML/CSS, JavaScript, jQuery, Bootstrap, and Photoshop in a comprehensive 140-hour
-                  curriculum.
-               </p>
-               <p>After the courses, I kept on learning about Front-End development independently, going beyond what I
-                  learned in the
-                  program. I put this knowledge into action in real projects and achieved some solid results. I'm
-                  committed to always
-                  improving my skills and learning more in this field. I'd be really grateful for a chance to take a
-                  test task to show
-                  what I can do.
-               </p>
-               <p>I'm on the lookout for a Trainee/Junior position where I can put my current skills to work and am
-                  totally open to
-                  learning whatever is needed for the job.</p>
-            </div>
-         </div>
+
       </section>
       <section class="education-page">
          <div class="container">
@@ -238,7 +267,7 @@
       </div>
    </div>
 </footer>
-   <script src="js/app.min.js"></script>
+   <script src="js/app.min.js?_v=20240619171825"></script>
 
 </body>
 
