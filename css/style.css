@@ -922,6 +922,7 @@ header {
 .technologies-menu__list {
   position: relative;
   padding-left: 15px;
+  overflow: hidden;
 }
 
 .technologies-menu__list::before {
