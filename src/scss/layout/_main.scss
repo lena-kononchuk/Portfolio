@@ -233,6 +233,7 @@
    &__list {
       position: relative;
       padding-left: 15px;
+      overflow: hidden;
       @media screen and (min-width: 992px) {
          padding-left: 25px;
       }
