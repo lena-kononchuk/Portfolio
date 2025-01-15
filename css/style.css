@@ -829,8 +829,6 @@ header {
   mask-image: radial-gradient(circle, transparent 70%, #000 11%);
   -webkit-box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
           box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
-  -webkit-animation: grow 3s infinite;
-          animation: grow 3s infinite;
 }
 
 .hero-page .circle-shrink {
@@ -843,8 +841,6 @@ header {
   background: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
   -webkit-box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
           box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
-  -webkit-animation: shrink 3s infinite;
-          animation: shrink 3s infinite;
 }
 
 @-webkit-keyframes shrink {
